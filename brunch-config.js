@@ -1,25 +1,26 @@
-module.exports = {
-
-  paths: {
-    public: 'public',
-    watched: ['src']
-  },
-
+exports.config = {
+  // See http://brunch.io/#documentation for docs.
   files: {
     javascripts: {
       joinTo: {
-        'js/app.js': /^src\/js/
+        'vendor.js': /^node_modules/,
+        'main.js': /^app/
+      },
+      order: {
+        after: [/\.html$/, /\.css$/]
       }
     },
     stylesheets: {
-      joinTo: {
-        'css/app.css' : /^src/
-      }
+      joinTo: 'app.css'
+    },
+    templates: {
+      joinTo: 'main.js'
     }
   },
-
   plugins: {
-    babel: {presets: ['es2015']}
+    inlineCss: {
+      html: true,
+      passthrough: [/^node_modules/, 'app/global.css']
+    }
   }
-
 };
