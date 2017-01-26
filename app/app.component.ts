@@ -19,18 +19,7 @@ import {Component} from '@angular/core';
       padding-top: 0.5em;
     }
   `],
-  template: `
-    <header>
-      <h1>Hello {{ name }}</h1>
-    </header>
-    <navbar></navbar>
-    <main>
-      <router-outlet></router-outlet>
-    </main>
-    <footer>
-      Brunch for Angular 2 by <a [href]="url">Colin Bate</a>
-    </footer>
-  `
+  template: require('./app.component.html')
 })
 export class AppComponent {
   name: string = 'Brunch for Angular 2';

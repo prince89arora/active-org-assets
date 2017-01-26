@@ -6,7 +6,7 @@ import {HttpModule} from '@angular/http';
 import {AppComponent} from './app.component';
 import {Home} from './home';
 import {About} from './about';
-import {NavBarComponent} from './navbar.component';
+import { NavBarComponent } from './navbar/navbar.component';
 
 @NgModule({
     imports: [

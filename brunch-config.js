@@ -21,6 +21,19 @@ exports.config = {
     inlineCss: {
       html: true,
       passthrough: [/^node_modules/, 'app/global.css']
+    },
+
+    copycat:{
+      "fonts" : ["node_modules/bootstrap/dist/fonts"],
+      verbose : true, //shows each file that is copied to the destination directory 
+      onlyChanged: true //only copy a file if it's modified time has changed (only effective when using brunch watch) 
+    }
+
+  },
+
+  npm: {
+    styles: {
+      bootstrap: ['dist/css/bootstrap.css']
     }
   }
 };
