@@ -2,12 +2,16 @@
  Global css for ui module.
 */
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Raleway', sans-serif;
   background: #F8F8F6;
 }
 
+input, button, select, textarea {
+  font-family: 'Raleway', sans-serif;
+}
+
 p,a,span,h1,h2,h3,h4,h5,h6 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #3C4858;
   background-color: transparent;      
 }
@@ -84,7 +88,19 @@ a:hover {
   background: transparent;
 }
 
+.block-white {
+  position: relative;
+  width: 100%;
+  margin: 0px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  border-radius: 3px;
+  color: rgba(0,0,0, 0.87);
+  background: #fff;
+}
 
+.content {
+  padding: 1%;
+}
 
 
     

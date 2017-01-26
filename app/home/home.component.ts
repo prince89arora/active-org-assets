@@ -2,7 +2,6 @@ import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'home',
-  styles: [require('./home.component.css')],
   template: require('./home.component.html')
 })
 export default class HomeComponent implements OnInit {
