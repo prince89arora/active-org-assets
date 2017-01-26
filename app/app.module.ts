@@ -7,6 +7,8 @@ import {AppComponent} from './app.component';
 import {Home} from './home';
 import {About} from './about';
 import { NavBarComponent } from './navbar/navbar.component';
+import { AuthService } from './services/auth.service';
+
 
 @NgModule({
     imports: [
@@ -19,7 +21,7 @@ import { NavBarComponent } from './navbar/navbar.component';
         AppComponent,
         Home, About, NavBarComponent
     ],
-    providers: [],
+    providers: [AuthService],
     bootstrap: [AppComponent]
 })
 export class AppModule {}
