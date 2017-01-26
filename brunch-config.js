@@ -34,6 +34,9 @@ exports.config = {
   npm: {
     styles: {
       bootstrap: ['dist/css/bootstrap.css']
-    }
+    },
+    javascripts: {
+      bootstrap: ['dist/js/bootstrap.js']
+    },
   }
 };

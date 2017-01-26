@@ -1,4 +1,4 @@
-<div class="col-md-2" id="sidebar-wrapper">
+<div class="col-md-2 col-sm-12" id="sidebar-wrapper">
 	<div class="logo-wrapper">
 	  	<h1>Active Org</h1>
 	  	<hr/>
@@ -10,7 +10,44 @@
 	</div>
 </div>
 
-<div class="col-md-10">
+<div class="col-md-10 col-sm-12" id="main-panel">
+	
+	<nav class="navbar navbar-transparent navbar-absolute" id="topnav">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<form class="navbar-form navbar-right" role="search">
+					<div class="form-group  is-empty">
+						<input type="text" class="form-control" placeholder="Search" name="q">
+					</div>
+					<button type="submit" class="btn btn-default">
+						<i class="glyphicon glyphicon-search"></i>
+					</button>
+				</form>
+			</div>
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<i class="glyphicon glyphicon-th-large"></i>
+						</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<i class="glyphicon glyphicon-bell"></i>
+							<span class="notification">5</span>
+						</a>
+					</li>
+					<li>
+						<a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
+							<i class="glyphicon glyphicon-user"></i>
+ 						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	
 		<router-outlet></router-outlet>	
 </div>
 
