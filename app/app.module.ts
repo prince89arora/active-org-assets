@@ -6,8 +6,12 @@ import {HttpModule} from '@angular/http';
 import {AppComponent} from './app.component';
 import {Home} from './home';
 import {About} from './about';
+import { Login } from './security/login.component';
 import { NavBarComponent } from './navbar/navbar.component';
 import { AuthService } from './services/auth.service';
+import { UserService } from './services/user.service';
+import { ConstantService } from './services/constant.service';
+import { LocalStorageModule } from 'angular-2-local-storage';
 
 
 @NgModule({
@@ -15,13 +19,14 @@ import { AuthService } from './services/auth.service';
         BrowserModule,
         FormsModule,
         routing,
-        HttpModule
+        HttpModule,
+        LocalStorageModule
     ],
     declarations: [
         AppComponent,
-        Home, About, NavBarComponent
+        Home, About, NavBarComponent, Login
     ],
-    providers: [AuthService],
+    providers: [AuthService, UserService, ConstantService],
     bootstrap: [AppComponent]
 })
 export class AppModule {}
